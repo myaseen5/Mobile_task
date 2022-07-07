@@ -10,6 +10,11 @@
 		76EF8A569442DF89771DF280 /* Pods_Mobile_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983B0C6B6B33E75408C5F527 /* Pods_Mobile_task.framework */; };
 		FA0A4C5D287734F70094FC96 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A4C5C287734F70094FC96 /* UIViewController+Extension.swift */; };
 		FA0A4C61287736190094FC96 /* RegistrationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A4C60287736190094FC96 /* RegistrationVC.xib */; };
+		FA0A4C6728773DE40094FC96 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A4C6328773DE40094FC96 /* Alerts.swift */; };
+		FA0A4C6928773DE40094FC96 /* APIsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A4C6528773DE40094FC96 /* APIsClass.swift */; };
+		FA0A4C6A28773DE40094FC96 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A4C6628773DE40094FC96 /* Connectivity.swift */; };
+		FA0A4C6C28773F190094FC96 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A4C6B28773F190094FC96 /* ProgressHUD.swift */; };
+		FA0A4C8F287740F20094FC96 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A4C72287740F20094FC96 /* LoginModel.swift */; };
 		FA10EA7228772E9500C565BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10EA7128772E9500C565BC /* AppDelegate.swift */; };
 		FA10EA7628772E9500C565BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10EA7528772E9500C565BC /* ViewController.swift */; };
 		FA10EA7928772E9500C565BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA10EA7728772E9500C565BC /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 		F740CAAAD0182816EC0F9A83 /* Pods-Mobile_task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile_task.debug.xcconfig"; path = "Target Support Files/Pods-Mobile_task/Pods-Mobile_task.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0A4C5C287734F70094FC96 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		FA0A4C60287736190094FC96 /* RegistrationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationVC.xib; sourceTree = "<group>"; };
+		FA0A4C6328773DE40094FC96 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		FA0A4C6528773DE40094FC96 /* APIsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIsClass.swift; sourceTree = "<group>"; };
+		FA0A4C6628773DE40094FC96 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		FA0A4C6B28773F190094FC96 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		FA0A4C72287740F20094FC96 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FA10EA6E28772E9500C565BC /* Mobile_task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobile_task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA10EA7128772E9500C565BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA10EA7528772E9500C565BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +62,6 @@
 				F740CAAAD0182816EC0F9A83 /* Pods-Mobile_task.debug.xcconfig */,
 				28FE61AF0A6709EC1FAC9094 /* Pods-Mobile_task.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,6 +79,25 @@
 				FA0A4C5C287734F70094FC96 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FA0A4C6228773DE40094FC96 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A4C6328773DE40094FC96 /* Alerts.swift */,
+				FA0A4C6528773DE40094FC96 /* APIsClass.swift */,
+				FA0A4C6628773DE40094FC96 /* Connectivity.swift */,
+				FA0A4C6B28773F190094FC96 /* ProgressHUD.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FA0A4C6D287740F10094FC96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A4C72287740F20094FC96 /* LoginModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FA10EA6528772E9500C565BC = {
@@ -93,7 +121,9 @@
 		FA10EA7028772E9500C565BC /* Mobile_task */ = {
 			isa = PBXGroup;
 			children = (
+				FA0A4C6228773DE40094FC96 /* Constant */,
 				FA0A4C5B287734E90094FC96 /* Extension */,
+				FA0A4C6D287740F10094FC96 /* Models */,
 				FA10EA7128772E9500C565BC /* AppDelegate.swift */,
 				FA10EA892877327400C565BC /* Stoaryboard */,
 				FA10EA7528772E9500C565BC /* ViewController.swift */,
@@ -231,7 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0A4C5D287734F70094FC96 /* UIViewController+Extension.swift in Sources */,
+				FA0A4C6728773DE40094FC96 /* Alerts.swift in Sources */,
+				FA0A4C6C28773F190094FC96 /* ProgressHUD.swift in Sources */,
+				FA0A4C6928773DE40094FC96 /* APIsClass.swift in Sources */,
 				FA10EA7628772E9500C565BC /* ViewController.swift in Sources */,
+				FA0A4C8F287740F20094FC96 /* LoginModel.swift in Sources */,
+				FA0A4C6A28773DE40094FC96 /* Connectivity.swift in Sources */,
 				FA10EA872877325A00C565BC /* RegistrationVC.swift in Sources */,
 				FA10EA7228772E9500C565BC /* AppDelegate.swift in Sources */,
 			);

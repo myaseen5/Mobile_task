@@ -24,18 +24,18 @@ extension  UIViewController {
     }
     
     
-    //func startLoader(){
-    //    DispatchQueue.main.async {
-    //        ProgressHUD.animationType = .circleSpinFade
-    //        ProgressHUD.colorAnimation = UIColor.appColors(color: .GreenColor) ?? .blue
-    //        ProgressHUD.show()
-    //    }
-    //
-    //}
-    //
-    //func stopLoader(){
-    //    ProgressHUD.dismiss()
-    //}
+    func startLoading(message:String){
+        DispatchQueue.main.async {
+            ProgressHUD.animationType = .circleSpinFade
+            ProgressHUD.colorAnimation = UIColor.blue
+            ProgressHUD.show()
+        }
+    
+    }
+    
+    func stopLoading(){
+        ProgressHUD.dismiss()
+    }
     
     /// to format date ////
     func convertDateFormaterWithTime(_ date: String) -> String
@@ -101,4 +101,23 @@ extension  UIViewController {
 //    func stopLoading(){
 //        stopAnimating()
 //    }
+}
+extension UIView {
+
+    func makeShadow(){
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: -5, height: 5)
+        self.layer.shadowRadius = 10
+        self.layer.shadowOpacity = 0.16
+        self.layer.masksToBounds = false
+    }
+    
+    func makeShadow(height:Int,width:Int,radius:CGFloat,opacity:Float){
+           self.layer.shadowColor = UIColor.black.cgColor
+           self.layer.shadowOffset = CGSize(width: width, height: height)
+           self.layer.shadowRadius = radius
+           self.layer.shadowOpacity = opacity
+           self.layer.masksToBounds = false
+       }
+
 }

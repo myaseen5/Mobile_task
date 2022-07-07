@@ -65,54 +65,6 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brj-Ku-qvd">
-                                    <rect key="frame" x="40" y="571" width="123" height="31"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="31" id="s92-OE-nlr"/>
-                                    </constraints>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal">
-                                        <attributedString key="attributedTitle">
-                                            <fragment content="Forgot Password">
-                                                <attributes>
-                                                    <color key="NSColor" systemColor="linkColor"/>
-                                                    <font key="NSFont" size="16" name="AvenirNext-Medium"/>
-                                                    <integer key="NSUnderline" value="1"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1VJ-bF-4Wm">
-                                    <rect key="frame" x="274" y="571" width="61" height="31"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="31" id="cjW-iV-rFH"/>
-                                    </constraints>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal">
-                                        <attributedString key="attributedTitle">
-                                            <fragment content="Register">
-                                                <attributes>
-                                                    <color key="NSColor" systemColor="linkColor"/>
-                                                    <font key="NSFont" size="16" name="AvenirNext-Medium"/>
-                                                    <integer key="NSUnderline" value="1"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNJ-f9-Lm8">
-                                    <rect key="frame" x="20" y="642" width="335" height="31"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="31" id="Y1j-Jp-pTj"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Login">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXW-Pp-iTQ">
                                     <rect key="frame" x="40" y="366" width="295" height="34"/>
                                     <constraints>
@@ -164,6 +116,58 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brj-Ku-qvd">
+                                    <rect key="frame" x="40" y="571" width="123" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="s92-OE-nlr"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Forgot Password">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="linkColor"/>
+                                                    <font key="NSFont" size="16" name="AvenirNext-Medium"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1VJ-bF-4Wm">
+                                    <rect key="frame" x="293" y="571" width="42" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="cjW-iV-rFH"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Login">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="linkColor"/>
+                                                    <font key="NSFont" size="16" name="AvenirNext-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <connections>
+                                        <action selector="backButton" destination="-1" eventType="touchUpInside" id="W1W-kt-LyQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNJ-f9-Lm8">
+                                    <rect key="frame" x="20" y="642" width="335" height="31"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="Y1j-Jp-pTj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Register">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                             <constraints>
@@ -199,12 +203,14 @@
                                 <constraint firstItem="O11-VZ-a2Q" firstAttribute="leading" secondItem="Bsr-gX-7ao" secondAttribute="leading" constant="40" id="r0i-hf-ywb"/>
                                 <constraint firstItem="koO-46-5ip" firstAttribute="top" secondItem="hRB-kF-Vwf" secondAttribute="bottom" constant="15" id="uKM-gW-O5H"/>
                                 <constraint firstItem="qjB-DN-HSh" firstAttribute="top" secondItem="NRa-wl-Gd7" secondAttribute="bottom" constant="8" symbolic="YES" id="vVh-wb-o14"/>
+                                <constraint firstAttribute="bottom" secondItem="uNJ-f9-Lm8" secondAttribute="bottom" constant="139" id="w6i-u0-KHq"/>
                                 <constraint firstItem="uNJ-f9-Lm8" firstAttribute="leading" secondItem="Bsr-gX-7ao" secondAttribute="leading" constant="20" symbolic="YES" id="wep-7R-scb"/>
                                 <constraint firstItem="GZk-ux-595" firstAttribute="leading" secondItem="Bsr-gX-7ao" secondAttribute="leading" constant="40" id="x9I-u4-aNh"/>
                                 <constraint firstItem="hRB-kF-Vwf" firstAttribute="top" secondItem="ckl-ra-M6z" secondAttribute="bottom" constant="8" symbolic="YES" id="y9X-ue-wDE"/>
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Bsr-gX-7ao" secondAttribute="trailing" id="J5O-cO-c1v"/>
                         <constraint firstItem="Bsr-gX-7ao" firstAttribute="leading" secondItem="7y5-gA-H5I" secondAttribute="leading" id="bl7-R2-VAi"/>
@@ -215,7 +221,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="7y5-gA-H5I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1z1-pw-bJe"/>
                 <constraint firstItem="7y5-gA-H5I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FAP-Ik-cyy"/>
@@ -231,9 +237,6 @@
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
